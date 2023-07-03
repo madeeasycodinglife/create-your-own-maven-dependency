@@ -3,7 +3,8 @@
  I am assuming that ther are two project i.e. One is Source and another is Target .
 
 #1:) first use :: mvn clean install :: in the source project .
-#2:) then copy the ::             <groupId>com.madeeasy</groupId>
+#2:) then copy the groupId,artifactId,version from source project i.e.[in this case]::            
+                                  <groupId>com.madeeasy</groupId>
                                   <artifactId>addition-of-two-numbers</artifactId>
                                   <version>1.0-SNAPSHOT</version>
 #3:) this groupId and artifactId and version will be used in the targated project as a dependency like this ::
@@ -12,3 +13,5 @@
             <artifactId>addition-of-two-numbers</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+#4:) now click reimport in your ide 
+#5:) now you can use all the classes , interfacess etc from that dependency .
